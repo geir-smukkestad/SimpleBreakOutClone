@@ -1,0 +1,40 @@
+Unity
+--------
+
+Rigidbody: Interpolate for smoother movements
+
+Constraint game object movements:
+  Rigidbody -> Constraints -> Freeze position
+  
+Paddle unaffected when hit by ball: Check "kinematic" on Rigidbody
+
+------
+
+Blender:
+--------
+Export selected objects to FBX:
+ - Select
+ - Export -> FBX
+ - Check "limit to selected objects"
+ - Apply scaling: "FBX unit scale"
+ - Check "apply transform"
+
+------
+
+C#:
+--------
+- Deklarere property (member med getter og setter): propfull, Enter. F2 for å rename
+- CoRoutines:
+
+    void switchState(State newState, float delay = 0)
+    {
+        StartCoroutine(switchDelay(newState, delay));
+    }
+
+    IEnumerator switchDelay(State newState, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        endState();
+        m_state = newState;
+        beginState(newState);        
+    }

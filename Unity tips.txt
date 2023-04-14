@@ -1,0 +1,21 @@
+
+Prevent jitter effect on the player:
+ Rigid body: Interpolate -> Interpolate
+
+----------------
+
+Performance optimization: Burst compiler
+
+C# job system: Multithreading
+
+Alternativ til innebygd "Unity UI":
+ - Nytt UI-system: UI Toolkit
+ - Immediate mode UI: IMGUI
+
+Networking/multiplayer:
+- Netcode for GameObjects
+- Unity Transport (low level)
+- Game Server hosting
+- Unity Matchmaker service
+- Lobby
+- Relay service
